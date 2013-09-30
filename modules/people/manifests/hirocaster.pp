@@ -14,4 +14,6 @@ class people::hirocaster {
     ruby    => $version,
     version => '~> 1.2.0'
   }
+
+  include redis
 }
