@@ -16,4 +16,9 @@ class people::hirocaster {
   }
 
   include redis
+
+  # python
+  include python
+  package { 'pyenv-virtualenv': }
+
 }
