@@ -21,4 +21,5 @@ class people::hirocaster {
   include python
   package { 'pyenv-virtualenv': }
 
+  homebrew::tap { 'railwaycat/emacsmacport': }
 }
