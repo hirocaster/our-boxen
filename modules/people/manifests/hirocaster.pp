@@ -15,6 +15,8 @@ class people::hirocaster {
     version => '~> 1.2.0'
   }
 
+  ruby::version { '2.1.0': }
+
   include redis
 
   # python
