@@ -25,6 +25,9 @@ class people::hirocaster {
   # python
   include python
   package { 'pyenv-virtualenv': }
+  python::pip { 'percol':
+    virtualenv => '/opt/boxen/homebrew/',
+  }
 
   homebrew::tap { 'railwaycat/emacsmacport': }
 }

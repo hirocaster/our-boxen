@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen",      "3.0.2"
+github "boxen",      "3.3.4"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -38,4 +38,4 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 github "redis",      "1.0.0"
-github "python",     "1.1.1"
+mod 'python', :git => 'https://github.com/boxen/puppet-python.git'

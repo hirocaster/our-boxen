@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/boxen/puppet-python.git
+  ref: master
+  sha: 3feeb34da7b0aec82a8c1619b4e7dd549db66bdc
+  specs:
+    python (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-autoconf
   specs:
@@ -6,7 +13,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.0.2)
+    boxen (3.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
@@ -49,11 +56,6 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-python
-  specs:
-    python (1.1.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (1.0.0)
@@ -90,7 +92,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   autoconf (= 1.0.0)
-  boxen (= 3.0.2)
+  boxen (= 3.3.4)
   dnsmasq (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
@@ -100,7 +102,7 @@ DEPENDENCIES
   nginx (= 1.4.2)
   nodejs (= 3.2.9)
   openssl (= 1.0.0)
-  python (= 1.1.1)
+  python (>= 0)
   redis (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.3.4)
