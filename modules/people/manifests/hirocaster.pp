@@ -28,4 +28,6 @@ class people::hirocaster {
   }
 
   homebrew::tap { 'railwaycat/emacsmacport': }
+  homebrew::tap { 'homebrew/dupes': }
+  package { 'homebrew/dupes/apple-gcc42': }
 }
