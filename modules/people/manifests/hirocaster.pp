@@ -1,7 +1,7 @@
 class people::hirocaster {
   ruby::plugin { 'rbenv-sudo':
     ensure => 'master',
-    source  => 'dcarley/rbenv-sudo'
+    source => 'dcarley/rbenv-sudo'
   }
   class { 'nodejs::global': version => 'v0.10' }
   nodejs::module { 'yo': node_version => 'v0.10' }
@@ -11,11 +11,18 @@ class people::hirocaster {
   nodejs::module { 'ninja': node_version => 'v0.10' }
   nodejs::module { 'ungit': node_version => 'v0.10' }
 
-  $version = '2_0_0'
-  ruby::gem { "bundler for ${version}":
+  class { 'ruby::global':
+    version => 'system'
+  }
+
+  ruby::gem { "bundler for all ruby version":
     gem     => 'bundler',
-    ruby    => $version,
-    version => '~> 1.2.0'
+    ruby    => 'system',
+  }
+
+  ruby::gem { "ghn for all ruby version":
+    gem     => 'ghn',
+    ruby    => 'system',
   }
 
   include redis
