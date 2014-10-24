@@ -1,8 +1,9 @@
 class people::hirocaster {
-  ruby::plugin { 'rbenv-sudo':
-    ensure => 'master',
-    source => 'dcarley/rbenv-sudo'
-  }
+  # ruby::plugin { 'rbenv-sudo':
+  #   ensure => 'master',
+  #   source => 'dcarley/rbenv-sudo'
+  # }
+
   class { 'nodejs::global': version => 'v0.10' }
   nodejs::module { 'yo': node_version => 'v0.10' }
   nodejs::module { 'grunt-cli': node_version => 'v0.10' }
@@ -15,14 +16,15 @@ class people::hirocaster {
     version => 'system'
   }
 
-  ruby::gem { "bundler for all ruby version":
-    gem     => 'bundler',
-    ruby    => 'system',
+  ruby_gem { "bundler for all ruby version":
+    gem          => 'bundler',
+    version      => '~> 1.0',
+    ruby_version => '*',
   }
 
-  ruby::gem { "ghn for all ruby version":
-    gem     => 'ghn',
-    ruby    => 'system',
+  ruby_gem { "ghn for all ruby version":
+    gem          => 'ghn',
+    ruby_version => '*',
   }
 
   include redis
