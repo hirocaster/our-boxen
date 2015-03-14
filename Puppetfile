@@ -63,3 +63,5 @@ github "xquartz",     "1.2.1"
 
 github "redis",      "1.0.0"
 mod 'python', :git => 'https://github.com/boxen/puppet-python.git'
+github "atom", "1.2.0"
+github "brewcask", "0.0.6"

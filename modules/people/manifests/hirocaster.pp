@@ -3,8 +3,7 @@ class people::hirocaster {
   #   ensure => 'master',
   #   source => 'dcarley/rbenv-sudo'
   # }
-
-  class { 'nodejs::global': version => 'v0.10' }
+  class { 'nodejs::global': version => 'v0.10.1' }
   nodejs::module { 'yo': node_version => 'v0.10' }
   nodejs::module { 'grunt-cli': node_version => 'v0.10' }
   nodejs::module { 'bower': node_version => 'v0.10' }
@@ -39,4 +38,7 @@ class people::hirocaster {
   homebrew::tap { 'railwaycat/emacsmacport': }
   homebrew::tap { 'homebrew/dupes': }
   package { 'homebrew/dupes/apple-gcc42': }
+
+  include atom
+  atom::package { 'markdown-preview': }
 }
