@@ -41,5 +41,6 @@ class people::hirocaster {
 
   include atom
   atom::package { 'markdown-preview': }
+  atom::package { 'markdown-scroll-sync': }
   atom::package { 'japanese-wrap': }
 }
