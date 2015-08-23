@@ -13,27 +13,26 @@ class people::hirocaster {
   class { 'nodejs::global':
     version => $version
   }
-  # TODO: faild install
-  # npm_module { 'bower for ${version}':
-  #   module       => 'bower',
-  #   node_version => $version,
-  # }
-  # npm_module { 'yo for ${version}':
-  #   module       => 'yo',
-  #   node_version => $version,
-  # }
-  # npm_module { 'grunt-cli for ${version}':
-  #   module       => 'grunt-cli',
-  #   node_version => $version,
-  # }
-  # npm_module { 'generator-angular for ${version}':
-  #   module       => 'generator-angular',
-  #   node_version => $version,
-  # }
-  # npm_module { 'ninja for ${version}':
-  #   module       => 'ninja',
-  #   node_version => $version,
-  # }
+  npm_module { 'bower for ${version}':
+    module       => 'bower',
+    node_version => $version,
+  }
+  npm_module { 'yo for ${version}':
+    module       => 'yo',
+    node_version => $version,
+  }
+  npm_module { 'grunt-cli for ${version}':
+    module       => 'grunt-cli',
+    node_version => $version,
+  }
+  npm_module { 'generator-angular for ${version}':
+    module       => 'generator-angular',
+    node_version => $version,
+  }
+  npm_module { 'ninja for ${version}':
+    module       => 'ninja',
+    node_version => $version,
+  }
 
   # Ruby
   include ruby

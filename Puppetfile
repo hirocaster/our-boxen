@@ -48,7 +48,8 @@ github "homebrew",    "1.13.0"
 github "hub",         "1.4.1"
 github "inifile",     "1.4.1", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",       "1.4.6"
-github "nodejs",      "5.0.0"
+# github "nodejs",      "5.0.0" #bugfix patched
+github "nodejs",      "5.0.3", :repo => "hirocaster/puppet-nodejs" # patched version
 github "openssl",     "1.0.0"
 github "phantomjs",   "3.0.0"
 github "pkgconfig",   "1.0.0"
