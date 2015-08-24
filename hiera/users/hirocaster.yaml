@@ -2,3 +2,6 @@
 nodejs::build::ensure: "origin/master"
 nodejs::version::alias:
   "0.12": "0.12.7"
+
+# ruby
+ruby::build::ensure: "origin/master"
