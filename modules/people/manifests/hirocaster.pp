@@ -9,27 +9,27 @@ class people::hirocaster {
   }
 
   include nodejs
-  $version = "0.12" # specific to hirocaster.yaml
+  $version = "4.1" # specific to hirocaster.yaml
   class { 'nodejs::global':
     version => $version
   }
-  npm_module { 'bower for ${version}':
+  npm_module { "bower for ${version}":
     module       => 'bower',
     node_version => $version,
   }
-  npm_module { 'yo for ${version}':
+  npm_module { "yo for ${version}":
     module       => 'yo',
     node_version => $version,
   }
-  npm_module { 'grunt-cli for ${version}':
+  npm_module { "grunt-cli for ${version}":
     module       => 'grunt-cli',
     node_version => $version,
   }
-  npm_module { 'generator-angular for ${version}':
+  npm_module { "generator-angular for ${version}":
     module       => 'generator-angular',
     node_version => $version,
   }
-  npm_module { 'ninja for ${version}':
+  npm_module { "ninja for ${version}":
     module       => 'ninja',
     node_version => $version,
   }
