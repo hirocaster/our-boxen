@@ -1,14 +1,14 @@
 GIT
   remote: https://github.com/boxen/puppet-python.git
   ref: master
-  sha: 15bdfa1c42f20a2a3654026394f59e3e4e36177e
+  sha: 7d0806cb7536bc60f9adcc1c46ca09ff76034d2c
   specs:
     python (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.11.0)
+    boxen (3.11.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
@@ -53,7 +53,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.6)
+    nginx (1.6.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-nodejs
+  specs:
+    nodejs (5.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -83,7 +88,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.5.2)
+    ruby (8.5.3)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -94,11 +99,6 @@ GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
-
-GITHUBTARBALL
-  remote: hirocaster/puppet-nodejs
-  specs:
-    nodejs (5.0.3)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -116,7 +116,7 @@ GITHUBTARBALL
     module_data (0.0.4)
 
 DEPENDENCIES
-  boxen (= 3.11.0)
+  boxen (= 3.11.1)
   brewcask (= 0.0.6)
   brewcask (= 0.0.6)
   dnsmasq (= 2.0.1)
@@ -128,15 +128,15 @@ DEPENDENCIES
   hub (= 1.4.1)
   inifile (= 1.4.1)
   module_data (= 0.0.4)
-  nginx (= 1.4.6)
-  nodejs (= 5.0.3)
+  nginx (= 1.6.0)
+  nodejs (= 5.0.0)
   openssl (= 1.0.0)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
   python (>= 0)
   redis (= 3.1.0)
   repository (= 2.4.1)
-  ruby (= 8.5.2)
+  ruby (= 8.5.3)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   xquartz (= 1.2.1)
