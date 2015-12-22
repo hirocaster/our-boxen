@@ -33,6 +33,18 @@ class people::hirocaster {
     module       => 'ninja',
     node_version => $version,
   }
+  npm_module { "babel for ${version}":
+    module       => 'babel',
+    node_version => $version,
+  }
+  npm_module { "babel-cli for ${version}":
+    module       => 'babel-cli',
+    node_version => $version,
+  }
+  npm_module { "gulp for ${version}":
+    module       => 'gulp',
+    node_version => $version,
+  }
 
   # Ruby
   include ruby
