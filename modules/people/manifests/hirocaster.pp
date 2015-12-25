@@ -69,6 +69,10 @@ class people::hirocaster {
     gem          => 'ruby-lint',
     ruby_version => '*',
   }
+  ruby_gem { "rcodetools for all ruby version":
+    gem          => 'rcodetools',
+    ruby_version => '*',
+  }
 
   include redis
 
