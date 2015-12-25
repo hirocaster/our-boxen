@@ -51,7 +51,7 @@ class people::hirocaster {
   class { 'ruby::global':
     version => 'system'
   }
-  ruby::version { '2.2.2': }
+  ruby::version { '2.3.0': }
   ruby_gem { "bundler for all ruby version":
     gem          => 'bundler',
     version      => '~> 1.0',
