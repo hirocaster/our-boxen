@@ -69,3 +69,4 @@ github "redis",       "3.1.0"
 
 mod 'python', :git => 'https://github.com/boxen/puppet-python.git'
 github "brewcask", "0.0.6"
+github "dropbox"

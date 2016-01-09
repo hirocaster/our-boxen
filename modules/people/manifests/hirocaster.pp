@@ -94,4 +94,7 @@ class people::hirocaster {
   # atom::package { 'markdown-scroll-sync': }
   # atom::package { 'japanese-wrap': }
   # atom::package { 'autosave': }
+
+  # packages
+  include dropbox
 }
