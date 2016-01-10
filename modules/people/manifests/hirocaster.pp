@@ -98,4 +98,5 @@ class people::hirocaster {
   # packages
   include dropbox
   include onepassword
+  include virtualbox
 }

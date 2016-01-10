@@ -5,6 +5,13 @@ GIT
   specs:
     python (0.0.1)
 
+GIT
+  remote: https://github.com/jcjohn/puppet-virtualbox.git
+  ref: master
+  sha: 82fbd364d7e75d32a6fc9dc5259cd60e0e7c71e9
+  specs:
+    virtualbox (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -151,5 +158,6 @@ DEPENDENCIES
   ruby (= 8.5.3)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
+  virtualbox (>= 0)
   xquartz (= 1.2.1)
 
