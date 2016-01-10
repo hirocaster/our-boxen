@@ -99,4 +99,5 @@ class people::hirocaster {
   include dropbox
   include onepassword
   include virtualbox
+  include istatmenus5
 }

@@ -12,6 +12,13 @@ GIT
   specs:
     virtualbox (0.0.1)
 
+GIT
+  remote: https://github.com/joffotron/puppet-istatmenus5.git
+  ref: master
+  sha: 2b21f82dfbfd84b336c43e9c35d38cc333b166d7
+  specs:
+    istatmenus5 (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -145,6 +152,7 @@ DEPENDENCIES
   homebrew (= 1.13.0)
   hub (= 1.4.1)
   inifile (= 1.4.1)
+  istatmenus5 (>= 0)
   module_data (= 0.0.4)
   nginx (= 1.6.0)
   nodejs (= 5.0.0)
