@@ -112,7 +112,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (8.5.3)
+    ruby (8.5.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -163,7 +163,7 @@ DEPENDENCIES
   python (>= 0)
   redis (= 3.1.0)
   repository (= 2.4.1)
-  ruby (= 8.5.3)
+  ruby (= 8.5.4)
   stdlib (= 4.7.0)
   sudo (= 1.0.0)
   virtualbox (>= 0)
