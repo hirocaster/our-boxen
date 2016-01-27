@@ -79,8 +79,18 @@ class people::hirocaster {
   # python
   include python
   package { 'pyenv-virtualenv': }
+  include python::virtualenvwrapper
   python::pip { 'mycli':
     virtualenv => '/opt/boxen/homebrew/',
+  }
+
+  python::mkvirtualenv{ 'elasticsearch':
+    ensure      => present,
+    systempkgs  => false,
+    distribute  => true
+  }
+  python::pip { 'elasticsearch':
+    virtualenv => '/opt/boxen/data/virturalenvs/elasticsearch',
   }
 
   # homebrew
