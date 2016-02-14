@@ -88,6 +88,7 @@ class people::hirocaster {
   homebrew::tap { 'railwaycat/emacsmacport': }
   # homebrew::tap { 'homebrew/dupes': }
   # package { 'homebrew/dupes/apple-gcc42': }
+  package { 'evernote': provider => 'brewcask' }
 
   # include atom
   # atom::package { 'markdown-preview': }
