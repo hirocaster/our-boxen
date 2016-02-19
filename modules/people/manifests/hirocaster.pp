@@ -86,15 +86,9 @@ class people::hirocaster {
   # homebrew
   include brewcask
   homebrew::tap { 'railwaycat/emacsmacport': }
-  # homebrew::tap { 'homebrew/dupes': }
-  # package { 'homebrew/dupes/apple-gcc42': }
-  package { 'evernote': provider => 'brewcask' }
 
-  # include atom
-  # atom::package { 'markdown-preview': }
-  # atom::package { 'markdown-scroll-sync': }
-  # atom::package { 'japanese-wrap': }
-  # atom::package { 'autosave': }
+  # FIXME:
+  # package { 'evernote': provider => 'brewcask' }
 
   # packages
   include dropbox
