@@ -46,6 +46,16 @@ class people::hirocaster {
     node_version => $version,
   }
 
+  npm_module { "tslint for ${version}":
+    module       => 'tslint',
+    node_version => $version,
+  }
+
+  npm_module { "typescript for ${version}":
+    module       => 'typescript',
+    node_version => $version,
+  }
+
   # Ruby
   include ruby
   class { 'ruby::global':
