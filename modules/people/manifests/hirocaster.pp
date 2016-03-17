@@ -84,6 +84,11 @@ class people::hirocaster {
     ruby_version => '*',
   }
 
+  ruby_gem { "ripper-tags for 2.3.x":
+    gem          => 'ripper-tags',
+    ruby_version => "*",
+  }
+
   include redis
 
   # python
