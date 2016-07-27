@@ -58,35 +58,44 @@ class people::hirocaster {
 
   # Ruby
   include ruby
+
+  $ruby_global_version = "2.3.1"
+
+  ruby::version { $ruby_global_version: }
+
   class { 'ruby::global':
-    version => 'system'
-  }
-  ruby::version { '2.3.0': }
-  ruby_gem { "bundler for all ruby version":
-    gem          => 'bundler',
-    version      => '~> 1.0',
-    ruby_version => '*',
-  }
-  ruby_gem { "ghn for all ruby version":
-    gem          => 'ghn',
-    ruby_version => '*',
-  }
-  ruby_gem { "rubocop for all ruby version":
-    gem          => 'rubocop',
-    ruby_version => '*',
-  }
-  ruby_gem { "ruby-lint for all ruby version":
-    gem          => 'ruby-lint',
-    ruby_version => '*',
-  }
-  ruby_gem { "rcodetools for all ruby version":
-    gem          => 'rcodetools',
-    ruby_version => '*',
+    version => $ruby_global_version
   }
 
-  ruby_gem { "ripper-tags for 2.3.x":
+  ruby_gem { "bundler for global version":
+    gem          => 'bundler',
+    version      => '~> 1.0',
+    ruby_version => $ruby_global_version,
+  }
+  ruby_gem { "ghn for global version":
+    gem          => 'ghn',
+    ruby_version => $ruby_global_version,
+  }
+  ruby_gem { "rubocop for global version":
+    gem          => 'rubocop',
+    ruby_version => $ruby_global_version,
+  }
+  ruby_gem { "ruby-lint for global version":
+    gem          => 'ruby-lint',
+    ruby_version => $ruby_global_version,
+  }
+  ruby_gem { "rcodetools for global version":
+    gem          => 'rcodetools',
+    ruby_version => $ruby_global_version,
+  }
+  ruby_gem { "each_dir_zip for global version":
+    gem          => 'each_dir_zip',
+    ruby_version => $ruby_global_version,
+  }
+
+  ruby_gem { "ripper-tags for global":
     gem          => 'ripper-tags',
-    ruby_version => "*",
+    ruby_version => $ruby_global_version,
   }
 
   include redis
