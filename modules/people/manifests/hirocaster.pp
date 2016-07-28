@@ -88,6 +88,9 @@ class people::hirocaster {
     gem          => 'rcodetools',
     ruby_version => $ruby_global_version,
   }
+
+  package { 'imagemagick': } # for RMagic
+  package { 'pkg-config': }  # for RMagic
   ruby_gem { "each_dir_zip for global version":
     gem          => 'each_dir_zip',
     ruby_version => $ruby_global_version,
