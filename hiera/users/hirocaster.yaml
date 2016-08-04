@@ -6,3 +6,9 @@ nodejs::version::alias:
 
 # ruby
 ruby::build::ensure: "origin/master"
+
+# rbenv plugins
+"ruby::rbenv::plugins":
+  "rbenv-sudo":
+    "ensure": "master"
+    "source": "dcarley/rbenv-sudo"
