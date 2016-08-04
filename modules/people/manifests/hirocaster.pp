@@ -110,6 +110,9 @@ class people::hirocaster {
   python::pip { 'mycli':
     virtualenv => '/opt/boxen/homebrew/',
   }
+  python::pip { 'aws-shell':
+    virtualenv => '/opt/boxen/homebrew/',
+  }
 
   python::mkvirtualenv{ 'elasticsearch':
     ensure      => present,
