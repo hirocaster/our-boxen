@@ -95,6 +95,10 @@ class people::hirocaster {
     gem          => 'each_dir_zip',
     ruby_version => $ruby_global_version,
   }
+  ruby_gem { "ec2ssh for global version":
+    gem          => 'ec2ssh',
+    ruby_version => $ruby_global_version,
+  }
 
   ruby_gem { "ripper-tags for global":
     gem          => 'ripper-tags',
