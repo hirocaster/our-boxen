@@ -1,13 +1,4 @@
 class people::hirocaster {
-  # Node.js
-  # FIX: 昔入れたnvmモジュールの残骸を削除
-  file { '/opt/boxen/bin/node':
-    ensure => absent
-  }
-  file { '/opt/boxen/bin/npm':
-    ensure => absent
-  }
-
   include nodejs
   $version = "4.2" # specific to hirocaster.yaml
   class { 'nodejs::global':
