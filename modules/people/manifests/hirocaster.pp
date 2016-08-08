@@ -88,6 +88,7 @@ class people::hirocaster {
   }
   ruby_gem { "ec2ssh for global version":
     gem          => 'ec2ssh',
+    version      => '3.1.0.rc2',
     ruby_version => $ruby_global_version,
   }
 
