@@ -27,12 +27,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-brewcask
   specs:
-    brewcask (0.0.6)
+    brewcask (0.0.7)
 
 GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
-    dnsmasq (2.0.1)
+    dnsmasq (2.0.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-dropbox
@@ -52,7 +52,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-git
   specs:
-    git (2.9.0)
+    git (2.10.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-go
@@ -62,12 +62,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (2.0.2)
+    homebrew (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
   specs:
-    hub (1.4.3)
+    hub (1.4.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -77,7 +77,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (5.0.0)
+    nodejs (5.0.8)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -141,21 +141,20 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.11.1)
-  brewcask (= 0.0.6)
-  brewcask (= 0.0.6)
-  dnsmasq (= 2.0.1)
+  brewcask (= 0.0.7)
+  dnsmasq (= 2.0.2)
   dropbox (>= 0)
   foreman (= 1.2.0)
   gcc (= 3.0.2)
-  git (= 2.9.0)
+  git (= 2.10.0)
   go (= 2.1.0)
-  homebrew (= 2.0.2)
-  hub (= 1.4.3)
+  homebrew (= 2.1.0)
+  hub (= 1.4.4)
   inifile (= 1.4.1)
   istatmenus5 (>= 0)
   module_data (= 0.0.4)
   nginx (= 1.7.0)
-  nodejs (= 5.0.0)
+  nodejs (= 5.0.8)
   onepassword (>= 0)
   openssl (= 1.0.0)
   phantomjs (= 3.0.0)
@@ -168,4 +167,3 @@ DEPENDENCIES
   sudo (= 1.0.0)
   virtualbox (>= 0)
   xquartz (= 1.2.1)
-
