@@ -1,6 +1,6 @@
 class people::hirocaster {
   include nodejs
-  $version = "4.2" # specific to hirocaster.yaml
+  $version = "6.9" # specific to hirocaster.yaml
   class { 'nodejs::global':
     version => $version
   }
