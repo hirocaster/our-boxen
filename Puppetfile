@@ -68,7 +68,6 @@ github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
 
 mod 'python', :git => 'https://github.com/boxen/puppet-python.git'
-github "brewcask", "0.0.6"
 github "dropbox"
 github "onepassword"
 mod "virtualbox", :git => "https://github.com/jcjohn/puppet-virtualbox.git"
