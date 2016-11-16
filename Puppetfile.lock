@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/boxen/puppet-python.git
-  ref: master
-  sha: 7d0806cb7536bc60f9adcc1c46ca09ff76034d2c
-  specs:
-    python (0.0.1)
-
-GIT
   remote: https://github.com/jcjohn/puppet-virtualbox.git
   ref: master
   sha: 82fbd364d7e75d32a6fc9dc5259cd60e0e7c71e9
@@ -100,6 +93,11 @@ GITHUBTARBALL
     pkgconfig (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-python
+  specs:
+    python (2.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-redis
   specs:
     redis (3.1.0)
@@ -167,3 +165,4 @@ DEPENDENCIES
   sudo (= 1.0.0)
   virtualbox (>= 0)
   xquartz (= 1.2.1)
+

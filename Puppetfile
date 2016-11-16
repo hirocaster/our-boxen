@@ -67,8 +67,9 @@ github "xquartz",     "1.2.1"
 github "redis",       "3.1.0"
 # github "sysctl",      "1.0.1"
 
-mod 'python', :git => 'https://github.com/boxen/puppet-python.git'
 github "dropbox"
 github "onepassword"
+github "python"
+
 mod "virtualbox", :git => "https://github.com/jcjohn/puppet-virtualbox.git"
 mod "istatmenus5", :git => "https://github.com/joffotron/puppet-istatmenus5.git"
