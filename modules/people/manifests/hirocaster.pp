@@ -1,5 +1,14 @@
 class people::hirocaster {
-  include nodejs
+  # homebrew
+  # include brewcask
+  homebrew::tap { 'railwaycat/emacsmacport': }
+
+  # need? `brew link openssl --force`
+  package { 'openssl': }
+
+
+  # JavaScript
+    include nodejs
   $version = "6.9" # specific to hirocaster.yaml
   class { 'nodejs::global':
     version => $version
@@ -109,6 +118,9 @@ class people::hirocaster {
   python::pip { 'aws-shell':
     virtualenv => '/opt/boxen/homebrew/',
   }
+  python::pip { 'mitmproxy':
+    virtualenv => '/opt/boxen/homebrew/',
+  }
 
   python::mkvirtualenv{ 'elasticsearch':
     ensure      => present,
@@ -118,10 +130,6 @@ class people::hirocaster {
   python::pip { 'elasticsearch':
     virtualenv => '/opt/boxen/data/virturalenvs/elasticsearch',
   }
-
-  # homebrew
-  include brewcask
-  homebrew::tap { 'railwaycat/emacsmacport': }
 
   # FIXME:
   # package { 'evernote': provider => 'brewcask' }
