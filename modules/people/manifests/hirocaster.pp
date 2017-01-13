@@ -118,6 +118,9 @@ class people::hirocaster {
   python::pip { 'aws-shell':
     virtualenv => '/opt/boxen/homebrew/',
   }
+  python::pip { 'awslogs':
+    virtualenv => '/opt/boxen/homebrew/',
+  }
   python::pip { 'mitmproxy':
     virtualenv => '/opt/boxen/homebrew/',
   }
